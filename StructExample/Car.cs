@@ -25,22 +25,21 @@ namespace StructExample
     public  class Car
     {
         int carID;
-        EnumCarType carType;
+        protected EnumCarType carType;
         Wheel wheel;
         Radio radio;
         Gearbox gearbox;
-        public Car(int carID, EnumCarType carType)
+        public Car(int carID)
         {
-            this.CarType = carType;
+            
             
             this.carID = carID;
         }
-        public Car (int carID, EnumCarType carTyp, Wheel wheel,Radio radio, Gearbox box)
-        {
+        public Car (int carID,  Wheel wheel,Radio radio, Gearbox box)        {
             this.wheel = wheel;
             this.radio = radio;
             this.carID = carID;
-            this.CarType = carTyp;
+           
             this.gearbox = box;
         }
 
