@@ -17,6 +17,12 @@ namespace StructExample
 
             Car car1=new MediumCar(222);
 
+            if (true)
+            {
+                Console.WriteLine(car1.Wheel.Value);
+            }
+
+
             Car car2 = new SportCar(333);
 
             EnumCarType enumCarType = EnumCarType.MediumCar;
@@ -77,6 +83,25 @@ namespace StructExample
                     break;
             }
 
+            
+
+            int? a = null; // nullable a declaration
+            
+            a = 5; // nullable a set value
+
+            Console.WriteLine(a.Value); // nullable a get value
+            bool isSportCar;
+
+            if (car1.CarType == EnumCarType.SportCar)
+            {
+                isSportCar = true;
+            }
+            else
+            {
+                isSportCar = false;
+            }
+
+            bool isSportCarShort = car1.CarType == EnumCarType.SmallCar ?  true : false ;
 
             Console.ReadLine();
         }

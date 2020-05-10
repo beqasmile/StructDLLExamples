@@ -27,14 +27,16 @@ namespace StructExample
         int carID;
         protected EnumCarType carType;
         private Nullable<Wheel> wheel; //wheel is nullable = meanwhile its value is NULL
-        Radio radio;
-        Gearbox gearbox;
+        Nullable<Radio> radio;
+        Nullable<Gearbox> gearbox;
         public Car(int carID)
         {
             
             
             this.carID = carID;
         }
+
+
         public Car (int carID,  Wheel wheel,Radio radio, Gearbox box)        {
             this.wheel = wheel;
             this.radio = radio;
@@ -44,8 +46,7 @@ namespace StructExample
         }
 
         public Nullable<Wheel> Wheel { get => wheel; set => wheel = value; }
-        public Radio Radio { get => Radio1; set => Radio1 = value; }
-        public Radio Radio1 { get => radio; set => radio = value; }
+        public Nullable<Radio> Radio { get => radio; set => radio = value; }
         public EnumCarType CarType { get => carType; set => carType = value; }
         //
         //
