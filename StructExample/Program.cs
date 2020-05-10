@@ -21,6 +21,21 @@ namespace StructExample
 
             EnumCarType enumCarType = EnumCarType.MediumCar;
 
+            Wheel wheel = new Wheel();
+            wheel.wheelCompany = Enums.EnumWheelCompany.Alliance;
+            wheel.wheelSize = 3;
+
+            Radio radio = new Radio();
+            radio.frequencyType = Enums.EnumFrequency.FM;
+            radio.company = "GALGALAZ";
+
+
+            Gearbox gearbox = new Gearbox();
+            gearbox.numOfGears = Enums.EnumGears.FiveGears;
+
+            Car car3 = new Car(8, EnumCarType.SportCar, wheel, radio, gearbox);
+
+            Console.WriteLine(EnumCarType.SportCar);
 
             switch (car1.CarType)
             {
@@ -37,7 +52,8 @@ namespace StructExample
                     break;
             }
 
-                
+
+            Console.ReadLine();
         }
     }
 }

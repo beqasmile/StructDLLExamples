@@ -45,6 +45,9 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="Enums\EnumCarType.cs" />
+    <Compile Include="Enums\EnumFrequency.cs" />
+    <Compile Include="Enums\EnumGears.cs" />
+    <Compile Include="Enums\EnumWheelCompany.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Soldier.cs" />

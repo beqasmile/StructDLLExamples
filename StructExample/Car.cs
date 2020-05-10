@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StructExample.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,18 +9,18 @@ namespace StructExample
 {
     public struct Wheel
     {
-        int wheelSize;
-        string wheelCompany;
+        public int wheelSize;
+        public EnumWheelCompany wheelCompany;
     }
     public struct Radio
     {
-        int frequencyType;
-        string company;
+        public EnumFrequency frequencyType;
+        public string company;
     }
     public struct Gearbox
     {
-        int numOfGears;
-        string gearPlace;
+        public EnumGears numOfGears;
+        public string gearPlace;
     }
     public  class Car
     {
