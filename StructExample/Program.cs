@@ -47,6 +47,21 @@ namespace StructExample
 
             Console.WriteLine(EnumCarType.SportCar);
 
+
+                        
+
+            if (car3.Wheel!=null)
+            {
+                Console.WriteLine(car3.Wheel.Value);
+
+            }
+
+            if (car3.Wheel.HasValue )
+            {
+                Console.WriteLine(car3.Wheel.Value);
+
+            }
+
             switch (car1.CarType)
             {
                 case EnumCarType.Bus:
