@@ -8,7 +8,7 @@ namespace StructExample.Enums
 {
     public enum EnumFrequency
     {
-        FM,
-        AM
+        FM = 1,
+        AM= 2
     }
 }

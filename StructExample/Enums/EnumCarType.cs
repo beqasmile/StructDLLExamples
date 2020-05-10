@@ -8,10 +8,10 @@ namespace StructExample
 {
     public enum EnumCarType
     {
-        Bus,
-        SmallCar,
-        MediumCar,
-        SportCar,
-        TaxyCar
+        Bus =1,
+        SmallCar = 10,
+        MediumCar = 20,
+        SportCar= 2,
+        TaxyCar=5
     }
 }

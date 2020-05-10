@@ -8,9 +8,9 @@ namespace StructExample.Enums
 {
     public enum EnumWheelCompany
     {
-        Bmw,
-        Alliance,
-        VW
+        Bmw =1,
+        Alliance = 2,
+        VW =3
 
     }
 }

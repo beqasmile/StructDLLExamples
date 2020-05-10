@@ -8,7 +8,7 @@ namespace StructExample.Enums
 {
     public enum EnumGears
     {
-        FourGears,
-        FiveGears
+        FourGears =4 ,
+        FiveGears = 5
     }
 }

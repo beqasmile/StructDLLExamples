@@ -8,6 +8,10 @@ namespace StructExample
 {
     public class MediumCar : Car
     {
+        public MediumCar(int carID) : base (carID)
+        {
+            this.carType = EnumCarType.MediumCar;
+        }
         public MediumCar(int carID, Wheel wheel, Radio radio, Gearbox box) : base(carID, wheel, radio, box)
         {
             this.carType = EnumCarType.MediumCar;
